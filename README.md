@@ -15,6 +15,10 @@ It does not create a new feature or branch and does not commit.
 ```bash
 specify extension add --dev /path/to/speckit-extensions/refine
 ```
+or
+```bash
+specify extension add refine https://github.com/Zdertis420/spec-kit-refine/archive/refs/tags/v1.0.0.zip
+```
 
 ## Usage
 
