@@ -1,0 +1,28 @@
+schema_version: "1.0"
+
+extension:
+  id: "refine"
+  name: "Refine"
+  version: "1.0.0"
+  description: "Amend the latest feature with fixes/additions, then run plan, tasks, analyze (with fixes) and implement in one pass"
+  author: "Zdertis420"
+  license: "MIT"
+
+requires:
+  speckit_version: ">=0.1.0"
+  commands:
+    - "speckit.plan"
+    - "speckit.tasks"
+    - "speckit.analyze"
+    - "speckit.implement"
+
+provides:
+  commands:
+    - name: "speckit.refine.refine"
+      file: "commands/refine.md"
+      description: "Amend the latest feature spec with user-given fixes/additions, then plan, tasks, analyze, fix issues and implement"
+
+tags:
+  - "workflow"
+  - "iteration"
+  - "automation"
